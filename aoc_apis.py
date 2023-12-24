@@ -5,8 +5,13 @@ from aocd import get_data
 from datetime import date
 
 
+def get_session_cookie():
+    f = open("sensitive.txt", "r")
+    return f.read()
+
+
 def load_data(day=-1, year=-1):
-    session_cookie = "53616c7465645f5f7c2e017af2406b3ec98232747ffe0554485cfbb28d3cd27d8996af399b5a10e203225f948507d2ed9143d12cb0857ac918b8a305810e195c"
+    session_cookie = get_session_cookie()
     today = date.today()
     if day == -1:
         day = today.day

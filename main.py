@@ -3,7 +3,7 @@ from collections import deque
 
 import numpy as np
 from Advent_Of_Code_2023.aoc24 import *
-from aoc_apis import load_data
+from aoc_apis import load_data, get_session_cookie
 from copy import deepcopy
 import ast
 import time
@@ -18,6 +18,7 @@ from z3 import *
 
 def main():
     test = """"""
+    print(get_session_cookie())
     data = load_data(24, 2023)
     str_arr = test.split("\n")
     print(data)
