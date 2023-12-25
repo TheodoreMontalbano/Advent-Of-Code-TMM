@@ -2,7 +2,7 @@ import math
 from collections import deque
 
 import numpy as np
-from Advent_Of_Code_2023.aoc24 import *
+from Advent_Of_Code_2023.aoc25 import *
 from aoc_apis import load_data, get_session_cookie
 from copy import deepcopy
 import ast
@@ -18,10 +18,9 @@ from z3 import *
 
 def main():
     test = """"""
-    print(get_session_cookie())
-    data = load_data(24, 2023)
+    data = load_data(25, 2023)
     str_arr = test.split("\n")
-    print(data)
+    print(get_ans(data))
 
 
 # Press the green button in the gutter to run the script.
