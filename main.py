@@ -1,10 +1,5 @@
-import math
-from collections import deque
-
-import numpy as np
-from Advent_Of_Code_2023.aoc25 import *
+from Advent_Of_Code_2024.aoc25 import *
 from aoc_apis import load_data, get_session_cookie
-from copy import deepcopy
 import ast
 import time
 from z3 import *
@@ -17,9 +12,46 @@ from z3 import *
 
 
 def main():
-    test = """"""
-    data = load_data(25, 2023)
-    str_arr = test.split("\n")
+    test = """#####
+.####
+.####
+.####
+.#.#.
+.#...
+.....
+
+#####
+##.##
+.#.##
+...##
+...#.
+...#.
+.....
+
+.....
+#....
+#....
+#...#
+#.#.#
+#.###
+#####
+
+.....
+.....
+#.#..
+###..
+###.#
+###.#
+#####
+
+.....
+.....
+.....
+#....
+#.#..
+#.#.#
+#####"""
+    data = load_data(25, 2024)
     print(get_ans(data))
 
 
